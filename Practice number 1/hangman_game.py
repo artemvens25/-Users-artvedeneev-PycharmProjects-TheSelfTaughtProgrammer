@@ -1,6 +1,6 @@
 from random import choice
 
-words_list = ["собака", "кошка", "змея", "птица", "медведь", "обезьянка"]
+word_list = ["собака", "кошка", "змея", "птица", "медведь", "обезьянка"]
 
 def hangman(word):
     # счетчик неправильных ответов
@@ -35,9 +35,9 @@ def hangman(word):
             rletters[cind] = '$'
         else:
             wrong += 1
-        # Выводим теущий результат
+        # Выводим теущий результат слова
         print((" ".join(board)))
-        # Выводим теущий висельника
+        # Выводим теущее состояние висельника
         e = wrong + 1
         print("\n".join(stages[0: e]))
 
@@ -50,5 +50,5 @@ def hangman(word):
         print("Вы проиграли! Было загадано слово: {}.".format(word))
 
 if __name__ == "__main__":
-    hangman(choice(words_list))
+    hangman(choice(word_list))
 
