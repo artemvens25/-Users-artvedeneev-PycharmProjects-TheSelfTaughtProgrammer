@@ -1,1 +1,1 @@
-# -Users-artvedeneev-PycharmProjects-TheSelfTaughtProgrammer
+# TheSelfTaughtProgrammer
